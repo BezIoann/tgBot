@@ -1,9 +1,9 @@
 # tgBot
 
-### Для запуска приложения необходимо поставить MySQL Server, после установки нужно создать базу данных с названием citiesbd.
+### Для запуска приложения необходимо поставить MySQL Server, после установки нужно создать базу данных с названием citiesdb.
 
 ![изображение](https://user-images.githubusercontent.com/42849417/132012549-c5220c84-db72-4fd4-a4ac-0210c47e19a1.png)
-![изображение](https://user-images.githubusercontent.com/42849417/132012697-fc102338-911b-4b4d-b718-6f2273bd6e05.png)
+![изображение](https://user-images.githubusercontent.com/42849417/132045040-b28204d9-977b-4149-9813-8ad5d8ecd863.png)
 
 ### В файле application.yaml нужно указать имя и токен бота
 
