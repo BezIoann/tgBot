@@ -23,9 +23,9 @@
 
 * #### пример изменения описания
 PostMan
-![изображение](https://user-images.githubusercontent.com/42849417/132015407-fe95f3df-1e3b-4509-a169-6b63ef7301fa.png)
+![изображение](https://user-images.githubusercontent.com/42849417/132022603-94aa8457-5769-434d-bc22-7637d8076554.png)
 Telegram
-![изображение](https://user-images.githubusercontent.com/42849417/132015539-7032a5e1-aa2d-4cd8-a1f6-3a7c2b5f0e62.png)
+![изображение](https://user-images.githubusercontent.com/42849417/132022735-db7d53f4-cf31-426d-bfc3-070722cb0ecb.png)
 
 * #### Удаление
 PostMan
