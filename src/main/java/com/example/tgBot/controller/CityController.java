@@ -53,9 +53,9 @@ public class CityController {
     }
 
     @PutMapping("/update/{cityname}")
-    public ResponseEntity updateCity(@RequestBody City description, @PathVariable String cityname) {
+    public ResponseEntity updateCity(@RequestBody CityEntity city, @PathVariable String cityname) {
         try {
-            return ResponseEntity.ok(cityService.updateDescription(cityname, description));
+            return ResponseEntity.ok(cityService.update(cityname, city));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Something went wrong!");
         }

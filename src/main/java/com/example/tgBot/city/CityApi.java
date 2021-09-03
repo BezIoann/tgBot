@@ -1,7 +1,6 @@
 package com.example.tgBot.city;
 
 import com.example.tgBot.entity.CityEntity;
-import com.example.tgBot.model.City;
 import org.json.JSONObject;
 
 import java.io.IOException;

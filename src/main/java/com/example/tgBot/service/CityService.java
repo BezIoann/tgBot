@@ -21,12 +21,12 @@ public class CityService {
         return cityRepo.save(city);
     }
 
-    public City getOne(String cityname) throws CityNotFoundException {
+    public CityEntity getOne(String cityname) throws CityNotFoundException {
         CityEntity city = cityRepo.findByCityname(cityname);
         if (city == null) {
             throw  new CityNotFoundException("City not founded");
         }
-        return City.toModel(city);
+        return city;
     }
 
     public String delete(String cityname) {
@@ -35,10 +35,10 @@ public class CityService {
     }
 
 
-    public CityEntity updateDescription(String cityname, City description) {
+    public CityEntity update(String cityname, CityEntity UpdatedCity) {
         CityEntity city = cityRepo.findByCityname(cityname);
-        city.setDescription(description.getDescription());
+        city.setDescription(UpdatedCity.getDescription());
+        city.setCityname(UpdatedCity.getCityname());
         return cityRepo.save(city);
-
     }
 }
