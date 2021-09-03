@@ -21,6 +21,6 @@ public class CityApi {
 
         JSONObject object = new JSONObject(result);
         city.setDescription(object.getString("description"));
-        return "Description: " + city.getDescription();
+        return city.getDescription();
     }
 }

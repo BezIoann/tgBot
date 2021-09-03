@@ -16,7 +16,7 @@ public class CityService {
 
     public CityEntity addCity(CityEntity city) throws CityAlreadyExistException {
         if (cityRepo.findByCityname(city.getCityname()) != null) {
-            throw new CityAlreadyExistException("name was already added");
+            throw new CityAlreadyExistException("city already exists!");
         }
         return cityRepo.save(city);
     }
@@ -29,9 +29,9 @@ public class CityService {
         return City.toModel(city);
     }
 
-    public int delete(String cityname) {
+    public String delete(String cityname) {
         cityRepo.deleteByCityname(cityname);
-        return 1;
+        return cityname;
     }
 
 

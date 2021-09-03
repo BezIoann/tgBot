@@ -1,7 +1,6 @@
 package com.example.tgBot.bot;
 import com.example.tgBot.city.CityApi;
 import com.example.tgBot.entity.CityEntity;
-import com.example.tgBot.model.City;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -26,14 +25,14 @@ public class Bot extends TelegramLongPollingBot {
         CityEntity model = new CityEntity();
         if (update.hasMessage() && update.getMessage().hasText()) {
             Message chat = update.getMessage();
-            SendMessage helpMessage = new SendMessage();
-            helpMessage.setChatId(chat.getChatId().toString());
+            SendMessage msg = new SendMessage();
+            msg.setChatId(chat.getChatId().toString());
             try {
-                helpMessage.setText(CityApi.getDecription(chat.getText(),model));
-                execute(helpMessage);
+                msg.setText(CityApi.getDecription(chat.getText(),model));
+                execute(msg);
             } catch (IOException e) {
-                helpMessage.setText("Сity not found");
-                execute(helpMessage);
+                msg.setText("No such city exists in the database. But you can add it using our Rest WebService!");
+                execute(msg);
             }
         }
     }
