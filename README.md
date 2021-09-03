@@ -31,6 +31,5 @@ Telegram
 PostMan
 ![изображение](https://user-images.githubusercontent.com/42849417/132018233-ff3dc372-bab2-49f5-bfb2-88218c7adb31.png)
 Telegram
-![изображение](https://user-images.githubusercontent.com/42849417/132018346-b48e67de-1273-463e-a90b-af08352ab232.png)
-
+![изображение](https://user-images.githubusercontent.com/42849417/132022929-9bf4bf5a-e606-4091-a7b5-aa9b61154ce7.png)
 
